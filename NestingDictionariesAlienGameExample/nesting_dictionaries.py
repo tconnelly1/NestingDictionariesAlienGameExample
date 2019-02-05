@@ -17,7 +17,10 @@ for alien in aliens[0:3]:
         alien["color"] = "yellow"
         alien["speed"] = "medium"
         alien["points"] = 10
-
+    if alien["color"] == "yellow":
+        alien["color"] = "red"
+        alien["speed"] = "fast"
+        alien["points"] = 15
     
 # Show the first 5 aliens
 for alien in aliens[:5]:
